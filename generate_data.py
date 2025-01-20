@@ -3,11 +3,7 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 
-CATEGORIES = [
-    "Prepared Food", "Groceries",
-    "Electronics", "Personal Care",
-    "Entertainment & Social Activities",
-    "Other"]
+from constants import CATEGORIES
 
 rows = []
 for days_in_the_past in range(40):
