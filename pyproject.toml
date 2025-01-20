@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "expense dashboard"
+version = "0.1.0"
+description = ""
+authors = ["Hunter Bowie <axolotl@students.cs.ubc.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+matplotlib = "^3.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
