@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 data = pd.read_csv("data.csv")
+data["Amount"] = data["Amount"].apply(lambda amount: float(amount[3:]))
 data["Date"] = pd.to_datetime(data["Date"])
 data['Date'] = data['Date'].dt.date
 one_week_ago = datetime.today() - timedelta(weeks=1, days=1)
